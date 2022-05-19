@@ -1,0 +1,56 @@
+{% extends "app_second/components/base.html" %}
+{% load static %}
+
+
+{% block main %}
+<body class="d-flex h-100 text-center text-white bg-success">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+
+  </header>
+
+  <main class="px-2">
+    <h1>Мой список дел</h1>
+    <p class="lead">"Каждая минута, затраченная на планирование, экономит 10 минут при осуществлении плана.“</p>
+    <p class="lead">
+
+    </p>
+      <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-6 shadow">
+    <H2 class="text-success"> 1 </H2>
+      <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-text">Ввести название события или задачи</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-text">Ввести описание события или задачи</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+ <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-text">Указать дату</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>
+      <div class="modal-footer flex-column border-top-0">
+        <button type="button" class="btn btn-outline-success w-100 mx-0">Save changes</button>
+        <button type="button" class="btn btn-outline-danger w-100 mx-0" data-bs-dismiss="modal">Delete</button>
+      </div>
+    </div>
+  </div>
+  </main>
+
+
+</div>
+
+
+
+
+
+</body>
+
+{% endblock main %}
+
+

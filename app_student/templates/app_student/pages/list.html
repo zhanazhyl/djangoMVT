@@ -1,0 +1,110 @@
+{% extends "app_second/components/base.html" %}
+{% load static %}
+
+
+{% block main %}
+<body class="d-flex h-100 text-center text-white bg-success">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+
+  </header>
+
+  <main class="px-2">
+      <h1>Мой список дел</h1>
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+         <img class="mb-4" src="{% static 'img/food.jpg' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+
+          <li>1. Закуп продуктов на неделю</li>
+            <p>Mercado Central</p>
+
+        <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+
+        </div>
+      </div>
+     <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img class="mb-4" src="{% static 'img/dentist.jpg' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+          <li>2. Запись к дантисту</li>
+          <p>Клиника "МГЕР"</p>
+           <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+        </div>
+      </div>
+     <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img class="mb-4" src="{% static 'img/insurance.jpg' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+          <li>3. Пролонгировать страховку на дом</li>
+          <p>BBVA Banco</p>
+           <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+        </div>
+      </div>
+     <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img class="mb-4" src="{% static 'img/patines.png' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+          <li>4. Отвезти Зейна на первый урок "Patines"</li>
+          <p>Club de patinaje</p>
+           <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img class="mb-4" src="{% static 'img/django.png' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+          <li>5. Выполнить домашнее задание Django</li>
+          <p>Проект "Todolist"</p>
+          <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img class="mb-4" src="{% static 'img/estudio.jpg' %}" alt="" width="72" height="57">
+        </div>
+        <div>
+          <li>6. Выполнить домашнее задание по-испанскому</li>
+          <p>Los deberes de nivel C1</p>
+           <a href="#" class="btn btn-outline-light">
+            Изменить
+          </a>
+            <a href="#" class="btn btn-outline-danger">
+            Удалить
+          </a>
+        </div>
+      </div>
+    </div>
+{% endblock main %}
